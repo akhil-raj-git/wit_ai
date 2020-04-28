@@ -5,7 +5,7 @@ This is a simple client that makes API requests to your [Wit.ai](https://wit.ai/
 [Wit.ai](https://wit.ai/) is an NLP tool for developers. It makes it easy for developers to build applications and devices that you can talk or text to.
 
 Currently this package supports the "message" feature of Wit.ai.
-If you would like more features, please open a ticket with the 'enhancement' label.
+If you would like more features, please open a ticket with the **enhancement** label.
 
 ## Usage
 
@@ -18,7 +18,7 @@ import 'package:wit_ai/wit_ai.dart';
 Next, create a Wit object with your access token:
 
 ```
-final wit = Wit(accessToken: *ACCESS_TOKEN_HERE*);
+final wit = Wit(accessToken: ACCESS_TOKEN_HERE);
 ```
 NOTE: The access token can be found in the **Settings** tab on your wit.ai console.
 It should be titled **Client Access Token**.
@@ -28,7 +28,7 @@ It should be titled **Client Access Token**.
 The message method takes a String input to send to your Wit app. It returns a dynamic object.
 
 ```
-final wit = Wit(accessToken: *ACCESS_TOKEN_HERE*); // New Wit object
+final wit = Wit(accessToken: ACCESS_TOKEN_HERE); // New Wit object
 
 dynamic response = await wit.message("Hello");
 ```
