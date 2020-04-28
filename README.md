@@ -23,7 +23,7 @@ final wit = Wit(accessToken: ACCESS_TOKEN_HERE);
 NOTE: The access token can be found in the **Settings** tab on your wit.ai console.
 It should be titled **Client Access Token**.
 
-#### message()
+### message()
 
 The message method takes a String input to send to your Wit app. It returns a dynamic object.
 
