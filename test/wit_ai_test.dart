@@ -1,6 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:wit_ai/wit_ai.dart';
+import '../example/example.dart';
 
 void main() {
   final wit = 
@@ -15,5 +16,12 @@ void main() {
       expect(response['_text'], query);     
     }
   );
+
+  test("Tests the example class", () async {
+    dynamic call = await callWit();
+    print(call);
+
+    expect(call, isNotNull);
+  });
 
 }

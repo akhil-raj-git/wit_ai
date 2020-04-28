@@ -1,6 +1,6 @@
 name: wit_ai
 description: A simple client for Flutter and Dart to talk to your Wit.ai app
-version: 0.0.1
+version: 0.0.2
 author: Akhil Raj
 homepage: https://github.com/akhil-raj-git/wit_ai
 

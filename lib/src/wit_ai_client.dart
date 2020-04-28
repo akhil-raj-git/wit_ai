@@ -2,16 +2,15 @@ import 'package:flutter/material.dart';
 import 'network.dart';
 
 /// This class is a simple client for Wit.ai
-/// 
+///
 /// It has a single method at the current moment to message your Wit app.
 /// Other API methods coming soon!
-/// 
+///
 /// @author Akhil Raj
 /// @version 0.0.1
-/// 
+///
 /// GitHub - "https://github.com/akhil-raj-git/wit_ai"
 class Wit {
-  
   Wit({@required this.accessToken});
 
   /// Access token must be passed.
@@ -26,9 +25,7 @@ class Wit {
     String uri = 'https://api.wit.ai/message?q=' + query;
     String auth = 'Bearer $accessToken';
 
-    Map<String, String> headers = {
-      'Authorization' : auth
-    };
+    Map<String, String> headers = {'Authorization': auth};
 
     NetworkHelper http = new NetworkHelper(url: uri, headers: headers);
 
@@ -36,11 +33,9 @@ class Wit {
       dynamic data = await http.getData();
 
       return data;
-    }
-    catch (e) {
+    } catch (e) {
       throw new ErrorDescription(
-        "Something went wrong \n Suggested actions: check client access token"
-      );
+          "Something went wrong \n Suggested actions: check client access token");
     }
   }
 }
