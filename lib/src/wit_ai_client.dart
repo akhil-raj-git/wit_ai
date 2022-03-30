@@ -32,6 +32,8 @@ class Wit {
     try {
       dynamic data = await http.getData();
 
+      print('Data $data');
+
       return data;
     } catch (e) {
       throw new ErrorDescription(

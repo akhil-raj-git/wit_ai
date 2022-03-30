@@ -5,5 +5,5 @@ callWit() async {
 
   dynamic response = await wit.message("Hello");
 
-  return(response['entities']);
+  return (response['entities']);
 }
