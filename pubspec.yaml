@@ -1,11 +1,10 @@
 name: wit_ai
 description: A simple client for Flutter and Dart to talk to your Wit.ai app
 version: 0.0.2
-author: Akhil Raj
 homepage: https://github.com/akhil-raj-git/wit_ai
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.16.0 <3.0.0"
 
 dependencies:
   flutter:
@@ -16,6 +15,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+    
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
