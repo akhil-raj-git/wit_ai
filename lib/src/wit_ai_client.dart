@@ -11,7 +11,7 @@ import 'network.dart';
 ///
 /// GitHub - "https://github.com/akhil-raj-git/wit_ai"
 class Wit {
-  Wit({@required this.accessToken});
+  Wit({required this.accessToken});
 
   /// Access token must be passed.
   /// You can find it in your Wit app's settings.
@@ -31,6 +31,8 @@ class Wit {
 
     try {
       dynamic data = await http.getData();
+
+      print('Data $data');
 
       return data;
     } catch (e) {
